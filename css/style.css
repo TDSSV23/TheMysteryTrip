@@ -1,0 +1,39 @@
+/*fonte para titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Pacifico&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+}
+
+.txt-nav {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+.fundo {
+    filter: brightness(60%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.imgs {
+    background-color: rgb(133, 133, 133);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'pacifico';
+    text-align: center;
+    font-size: 5rem;
+}
