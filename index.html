@@ -12,7 +12,7 @@
     <link rel="icon" href="./img/avião.png">
 
     <!-- JS -->
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
     <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -69,8 +69,8 @@
 
 <!-- TESTES - popup para banner -->
     <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
-        <button onclick="fechar()">X</button>
-        <p>Anuncio</p>
+        <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
+        <p class="fs-1 text-center">Site em manutenção</p>
     </div>
 
 </body>
