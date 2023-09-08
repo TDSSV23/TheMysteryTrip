@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | The Mistery Trip</title>
-    <!-- CSS -->
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./img/avião.png">
@@ -19,14 +19,16 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
+            <!-- logo -->
             <a class="navbar-brand" href="#">
                 <img src="./img/avião.png" width="50" height="50">
             </a>
+            <!-- menu sanduiche / responsividade -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            <!-- itens menu nav -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
@@ -48,18 +50,28 @@
             </div>
         </div>
     </nav>
+
+    <!-- DIVs (ñ sei como descrever, sla... DIVs que ocupam toda a tela) -->
+    <!-- DIV 01 -->
     <div class="imgs" id="pacotes">
         <img src="./img/fundo1.jpg" alt="" srcset="" class="fundo">
     </div>
+    <!-- DIV 02 -->
     <div class="imgs" id="voos">
         <div>
             <h1>teste</h1>
         </div>
     </div>
+    <!-- DIV 03 -->
     <div class="imgs" id="hoteis">
         <img src="./img/fundo1.jpg" alt="" srcset="" class="fundo">
     </div>
 
+<!-- TESTES - popup para banner -->
+    <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
+        <button onclick="fechar()">X</button>
+        <p>Anuncio</p>
+    </div>
 
 </body>
 
