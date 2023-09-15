@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute">
         <div class="container-fluid">
             <!-- logo -->
             <a class="navbar-brand" href="#">
@@ -54,39 +54,47 @@
 
     <!-- DIVs (ñ sei como descrever, sla... DIVs que ocupam toda a tela) -->
     <!-- DIV 01 -->
-    <div class="imgs" id="pacotes">
-        <img src="./img/fundo1.jpg" alt="" class="fundo" id="home">
-        <div class="position-absolute top-50 start-50 translate-middle conteudo">
+    <div class="fundo um d-flex" id="pacotes">
+        <div class="m-auto">
             <hr class="border border-2 opacity-100">
             <h1 class="home-title txt-titulo text-center w">Desvende o Mundo</h1>
             <hr class="border border-2 opacity-100">
             <br>
-            <p class="text-center w sub-titulo">Junte-se a nós em uma jornada intrigante ao redor do mundo com The Mystery Trip. Explore destinos ocultos e desvende os segredos que os tornam únicos. Sua próxima aventura começa aqui.</p>
+            <p class="text-center w sub-titulo">Junte-se a nós em uma jornada intrigante ao redor do mundo com The
+                Mystery Trip. Explore destinos ocultos e desvende os segredos que os tornam únicos. Sua próxima aventura
+                começa aqui.</p>
 
         </div>
     </div>
-    <!-- DIV 02 -->
-    <div class="imgs fundo" id="voos">
-        <div>
-            <h1 class="b">teste</h1>
+
+    <div class="fundo d-flex m-auto" id="#">
+        <div class="m-auto">
+            <img src="./img/kombi.webp" class="kombi">
         </div>
     </div>
-    <!-- DIV 03 -->
-    <div class="imgs position-absolute" id="hoteis">
-        <img src="./img/mulher.jpg" alt="" class="fundo" id="">
-        <div class="position-absolute top-50 start-50 translate-middle">
+
+    <div class="fundo dois d-flex" id="nos">
+        <div class="m-auto">
             <hr class="border border-2 opacity-100">
-            <p class="home-title txt-titulo text-center w">Quem Somos?</p>
+            <h1 class="home-title txt-titulo text-center w">Quem somos?</h1>
             <hr class="border border-2 opacity-100">
             <br>
-            <p class="text-center w sub-titulo">Nós, um grupo de seis recém-chegados ao mercado de trabalho, unimos nossa paixão por aventuras e fundamos o site de viagens "The Mystery Trip". Estamos ansiosos para explorar destinos únicos e compartilhar experiências emocionantes com outros viajantes.</p>
+            <p class="text-center w sub-titulo">Nós, um grupo de seis recém-chegados ao mercado de trabalho, unimos
+                nossa paixão por aventuras e fundamos o site de viagens "The Mystery Trip". Estamos ansiosos para
+                explorar destinos únicos e compartilhar experiências emocionantes com outros viajantes.</p>
+
+        </div>
+    </div>
+
+    <div class="fundo d-flex" id="#">
+        <div class="my-auto">
+            <img src="./img/predios.jpg" class="predios">
         </div>
     </div>
 
     <!-- TESTES - popup para banner -->
     <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
         <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
-        <p class="fs-1 text-center">ANÚNCIO</p>
     </div>
 
     <a href="#" id="button-top">
