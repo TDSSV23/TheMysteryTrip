@@ -16,15 +16,6 @@ body {
     color: black;
 }
 
-/* fundo do site */
-.fundo {
-    filter: brightness(30%);
-    height: 100vh;
-    width: 100vw;
-    background-size: 100%;
-    z-index: 0;
-}
-
 /*menu NAV*/
 .navbar {
     position: fixed;
@@ -44,11 +35,21 @@ body {
 
 /*blocos DIV*/
 .fundo {
-    filter: brightness(50%);
+    background-color: white;
     height: 100vh;
     width: 100vw;
-    background-size: 100%;
     z-index: 0;
+    vertical-align: middle;
+    
+}
+
+img{
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.brilho{
+    filter: brightness(50%);
 }
 
 .txt-titulo {
@@ -66,8 +67,11 @@ body {
     line-height: normal;
 }
 
-.conteudo hr, .conteudo p{
-    width: 60rem;
+.kombi{
+    width: 50%;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    
 }
 
 /*titulos de div*/
@@ -130,12 +134,34 @@ h1 {
     background: #ffffff;
 }
 
-@media (max-width:720px) {
+/* RESPONSIVIDADE PARA TELAS MÉDIAS --800PX-- */
+@media screen and (max-width: 800px) {
+
     .txt-titulo {
-        font-size: 30px;
+        font-size: 60px;
+    }
+    
+    .sub-titulo {
+        font-size: 18px;
     }
 
-    .conteudo {
-        width: 19rem;
+    .conteudo hr, .conteudo p{
+        min-width: 25rem;
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
+@media screen and (max-width: 500px) {
+
+    .txt-titulo {
+        font-size: 40px;
+    }
+    
+    .sub-titulo {
+        font-size: 14px;
+    }
+
+    .conteudo hr, .conteudo p{
+        min-width: 22rem;
     }
 }
