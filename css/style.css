@@ -78,7 +78,6 @@ img{
 }
 
 .sub-titulo {
-    color: #ffffff;
     text-align: center;
     font-family: Montserrat;
     font-size: 28px;
@@ -87,12 +86,27 @@ img{
     line-height: normal;
 }
 
+.kombi div, .kombi div img{
+    width: 50vw;
+}
+
 .kombi{
-    width: 53%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.kombi-img{
     border-top-left-radius: 200px;
     border-bottom-right-radius: 200px;
-    margin-left: 1rem;
-    
+}
+
+.kombi-txt{
+    margin: auto;
+}
+.kombi-txt hr{
+    border: solid 1px black;
+    width: 30rem;
+    margin: auto;    
 }
 
 .predios{
@@ -180,6 +194,15 @@ h1 {
 
     .um div, .dois div{
         width: 30rem;
+    }
+    /* Tela 3 -  */
+    .kombi div, .kombi div img{
+        width: 50vw;
+    }
+    
+    .kombi{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
