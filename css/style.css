@@ -24,6 +24,13 @@ body {
     background-position: center;
 }
 
+#entre-contato{
+    background-image: url(../img/londres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /*blocos DIV*/
 .fundo {
     background-color: rgb(250, 250, 250);
@@ -89,14 +96,14 @@ img{
 /* fonte desenhada para titulos */
 .txt-titulo {
     font-family: 'Pacifico';
-    font-size: 80px;
+    font-size: 70px;
 }
 
 /* textos do site */
 .sub-titulo {
     text-align: center;
     font-family: Montserrat;
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -242,12 +249,10 @@ h1 {
     margin-left: -2px;
 }
 
-
-
-
-
-
-
+footer{
+    background-color: black;
+    color: white;
+}
 
 /* ADICIONAIS ADICIONAIS ADICIONAIS ADICIONAIS */
 
