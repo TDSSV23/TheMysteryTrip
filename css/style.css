@@ -131,17 +131,14 @@ h1 {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
+
 }
 
 /* Seta - botão voltar ao topo*/
-.arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 5px 5px 0;
-    border-radius: 4px;
-    display: inline-block;
-    padding: 8px;
+.bi-arrow-up-circle-fill {
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
 
 }
 
