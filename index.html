@@ -112,32 +112,65 @@
 
                 <div class="col coluna-voos">
                     <div class="row">
-                        <button class="border border-2 border-warning ida text-voo">
+                        <button class="border border-2 border-warning ida text-voo umm" onclick="trocar()">
                             <p>Ida e Volta</p>
                         </button>
-                        <button class="border border-2 border-dark-subtle volta text-voo">
+                        <button class="border border-2 border-dark-subtle volta text-voo doiis" onclick="trocar_dnv()">
                             <p>Somente Ida</p>
                         </button>
                     </div>
 
-                    <div class="row">
-                        <p class="airport-text">De onde você está saindo?</p>
-                        <p class="airport-text">Para onde você vai?</p>
-                    </div>
+                    <br>
 
-                    <div class="row">
-                        <input class="airport" placeholder="Buscar por aeroportos">
-                                <div class="circle-flecha border border-2 border-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange" class="bi bi-arrow-left-right flecha" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707  4H14.5a.5.5 0 0 1 .5.5z"/>
-                                    </svg></div>
-                        <input class="airport" placeholder="Buscar por aeroportos">
+                    <div class="row ida-volta-input" id="opcao-voo-1">
+
+                        <div class="col">De onde você está saindo?
+                            <input class="airport" placeholder="Buscar por aeroportos">
+                        </div>
+
+                        <div class="col setas">
+                            <br>
+                            <div class="circle-flecha border border-2 border-warning"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange"
+                                    class="bi bi-arrow-left-right flecha" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707  4H14.5a.5.5 0 0 1 .5.5z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="col">Para onde você vai?
+                            <input class="airport" placeholder="Buscar por aeroportos">
+                        </div>
+
+                    </div>
+                    <!-- Botão 02 -->
+                    <div class="row ida-volta-input" id="opcao-voo-2">
+
+                        <div class="col">alguma coisa
+                            <input class="airport" placeholder="Buscar por aeroportos">
+                        </div>
+
+                        <div class="col setas">
+                            <br>
+                            <div class="circle-flecha border border-2 border-warning"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange"
+                                    class="bi bi-arrow-left-right flecha" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707  4H14.5a.5.5 0 0 1 .5.5z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="col">alguma coisa
+                            <input class="airport" placeholder="Buscar por aeroportos">
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-<img class="flecha" src="./img/flecha-laranja.png">
 
     <!-- TESTES - popup para banner -->
     <!-- <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">

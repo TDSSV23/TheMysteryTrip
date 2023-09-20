@@ -8,20 +8,30 @@ body {
 }
 
 
-
+/* fundo das divs */
+/* "página 01" */
 #pacotes{
     background-image: url(../img/fundo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
+/* "página 02" */
 #nos{
     background-image: url(../img/mulher.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+/*blocos DIV*/
+.fundo {
+    background-color: rgb(250, 250, 250);
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
 
 /* cores de texto */
 .w {
@@ -32,53 +42,57 @@ body {
     color: black;
 }
 
+
 /*menu NAV*/
 .navbar {
-    z-index: 1;
+    z-index: 1; /* nav acima de tudo */
 }
 
 .txt-nav {
-    text-transform: uppercase;
-    font-size: .9rem;
-    font-weight: 700;
+    text-transform: uppercase; /* letras maiusculas */
+    font-size: .9rem; /* tam fonte */
+    font-weight: 700; /* espessura fonte */
 }
 
 .nav-item {
-    margin-left: 1rem;
+    margin-left: 1rem; /* distancia itens */
 }
 
 
 /*blocos DIV*/
 .fundo {
-    background-color: rgb(250, 250, 250);
-    height: 100vh;
-    width: 100%;
-    z-index: 0;
+    background-color: rgb(250, 250, 250); /* cor de fundo */
+    height: 100vh; /* tamanhos */
+    width: 100%; /* tamanhos */
+    z-index: 0; /* colocando o fundo no fundo */
 }
 
+/* Atributos gerais */
+
+/* margin do bootstap falhando */
 .m-auto{
     margin: auto;
 }
 
-
+/* largura das pages iguais */
 .um div, .dois div{
-    width: 50rem;
+    width: 50rem; 
 }
 
+
+/* ajustes imagem de fundo */
 img{
     object-fit: cover;
     vertical-align: middle;
 }
 
-.brilho{
-    filter: brightness(50%);
-}
-
+/* fonte desenhada para titulos */
 .txt-titulo {
     font-family: 'Pacifico';
     font-size: 80px;
 }
 
+/* textos do site */
 .sub-titulo {
     text-align: center;
     font-family: Montserrat;
@@ -87,6 +101,7 @@ img{
     font-weight: 600;
     line-height: normal;
 }
+
 
 .kombi div, .kombi div img{
     width: 50vw;
@@ -176,11 +191,38 @@ h1 {
     font-family: Inter, sans-serif;
 }
 
+#opcao-voo-2{
+    display: none;
+}
 
 /* voos grid (aeroportos) */
+.coluna-voos{
+    width: 100%;
+}
 
-.airport-text {
-    
+
+.umm{
+    margin-left: auto;
+}
+
+.doiis{
+    margin-right: auto;
+}
+
+.ida-volta-input{
+    width: 100%;
+}
+
+.ida-volta-input .col{
+    text-align: center;
+}
+
+.circle-flecha{
+    margin: 0;
+}
+
+.setas{
+    margin: 0;
 }
 
 .airport {
