@@ -7,6 +7,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 #pacotes{
     background-image: url(../img/fundo1.jpg);
     background-repeat: no-repeat;
@@ -111,9 +113,9 @@ img{
 
 .predios{
     height: 80vh;
-    border-top-left-radius: 200px;
-    border-bottom-right-radius: 200px;
-    margin-left: 2rem;
+    border-top-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    margin-left: 7rem;
 }
 
 /*titulos de div*/
@@ -141,6 +143,62 @@ h1 {
     cursor: pointer;
 
 }
+
+/* voos grid */
+
+
+
+/* voos grid (ida e volta) */
+
+.ida {
+    width: 210px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    background-color: white;
+    color: rgba(var(--bs-warning-rgb),var(--bs-border-opacity))!important;
+}  
+ 
+.volta  {
+    width: 210px;
+    height: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    color: #767676;
+    background-color: white;
+}
+
+.ida p, .volta p {
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+}
+
+
+/* voos grid (aeroportos) */
+
+.airport {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.circle-flecha {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;    
+}
+
+.flecha {
+    margin-top: 8px;
+    margin-left: -2px;
+}
+
+
+
+
 
 
 
@@ -218,3 +276,4 @@ h1 {
         width: 25rem;
     }
 }
+
