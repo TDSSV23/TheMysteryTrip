@@ -179,8 +179,12 @@ h1 {
 
 /* voos grid (aeroportos) */
 
+.airport-text {
+    
+}
+
 .airport {
-    width: 150px;
+    width: 190px;
     height: 50px;
     border-radius: 50px;
 }
