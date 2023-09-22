@@ -16,7 +16,7 @@
     <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body onload="reset()">
     <nav class="navbar navbar-expand-lg navbar-dark position-absolute">
         <div class="container-fluid">
             <!-- logo -->
@@ -112,10 +112,10 @@
 
                 <div class="col coluna-voos">
                     <div class="row">
-                        <button class="border border-2 border-warning ida text-voo umm" onclick="trocar()">
+                        <button class="border-2  ida text-voo umm" onclick="trocar(); clicado()">
                             <p>Ida e Volta</p>
                         </button>
-                        <button class="border border-2 border-dark-subtle volta text-voo doiis" onclick="trocar_dnv()">
+                        <button class="border-2  volta text-voo doiis" onclick="trocar_dnv()">
                             <p>Somente Ida</p>
                         </button>
                     </div>
@@ -140,9 +140,23 @@
                         </div>
 
                         <div class="col">Para onde você vai?
-                            <input class="airport" placeholder="Buscar por aeroportos">
+                            <input class="airport" placeholder="Buscar por aeroportos" type="text">
                         </div>
-
+                        <div class="row mt-3">
+                            <button class="data-ida umm d-inline-flex" onclick="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                    class="bi bi-calendar-week m-auto" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                    <path
+                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                </svg>
+                                <p class="m-auto">Ida</p>
+                            </button>
+                            <button class="  data-volta doiis" onclick="">
+                                <p class="m-auto">volta</p>
+                            </button>
+                        </div>
                     </div>
                     <!-- Botão 02 -->
                     <div class="row ida-volta-input" id="opcao-voo-2">
@@ -153,8 +167,8 @@
 
                         <div class="col setas">
                             <br>
-                            <div class="circle-flecha border border-2 border-warning"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange"
+                            <div class="circle-flecha border border-2 border-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange"
                                     class="bi bi-arrow-left-right flecha" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707  4H14.5a.5.5 0 0 1 .5.5z" />
@@ -165,6 +179,7 @@
                         <div class="col">alguma coisa
                             <input class="airport" placeholder="Buscar por aeroportos">
                         </div>
+
 
                     </div>
                 </div>
@@ -188,10 +203,7 @@
 
         </div>
     </div>
-    <!-- TESTES - popup para banner -->
-    <!-- <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
-        <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
-    </div> -->
+
 
     <a href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="blue"
@@ -233,6 +245,11 @@
             <p>nome redes sociais</p>
         </div>
     </footer>
+
+    <!-- TESTES - popup para banner -->
+    <!-- <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
+        <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
+    </div> -->
 </body>
 
 </html>
