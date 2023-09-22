@@ -241,21 +241,22 @@ h1 {
     width: 100%;
 }
 
+.col .setas{
+    width: 100%;
+}
+
+
 
 .umm {
     margin-left: auto;
 }
-
 .doiis {
     margin-right: auto;
 }
 
 .ida-volta-input {
-    width: 100%;
-}
-
-.ida-volta-input .col {
-    text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 .circle-flecha {
@@ -307,6 +308,7 @@ footer {
     display: block;
     animation-name: popup;
     animation-duration: 2s;
+    display: none;
 }
 
 #popup {
@@ -364,7 +366,7 @@ footer {
     }
 
     to {
-        margin-left: 0%;
+        margin-left: initial;
         opacity: 100%;
     }
 }
