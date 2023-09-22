@@ -7,8 +7,12 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-/* fundo das divs */
+
 /* "página 01" */
 #pacotes {
     background-image: url(../img/fundo1.jpg);
@@ -70,7 +74,7 @@ body {
     /* cor de fundo */
     height: 100vh;
     /* tamanhos */
-    width: 100%;
+    width: 100vw;
     /* tamanhos */
     z-index: 0;
     /* colocando o fundo no fundo */
@@ -210,12 +214,12 @@ h1 {
     display: none;
 }
 
-.ida:focus{
+.ida:focus {
     color: orange;
     border: solid orange 5px;
 }
 
-.volta:focus{
+.volta:focus {
     color: blue;
     border: solid blue 5px;
 }
@@ -249,12 +253,13 @@ h1 {
     color: #767676;
     background-color: white;
 }
+
 /* voos grid (aeroportos) */
 .coluna-voos {
     width: 100%;
 }
 
-.col .setas{
+.col .setas {
     width: 100%;
 }
 
@@ -263,6 +268,7 @@ h1 {
 .umm {
     margin-left: auto;
 }
+
 .doiis {
     margin-right: auto;
 }
@@ -300,9 +306,9 @@ h1 {
 
 
 
-.persona{
+.persona {
     width: 200px;
-    border: solid 1px black ;
+    border: solid 1px black;
     border-radius: 50px;
     padding: 10px;
     display: inline-flex;
@@ -310,30 +316,31 @@ h1 {
     justify-content: center;
 }
 
-.persona input{
-
+.persona input {
     width: 100px;
     height: auto;
     border: none;
     padding: 10px;
 }
 
-.buscar-c-volta, .buscar-ida{
+.buscar-c-volta,
+.buscar-ida {
     text-align: center;
-    background-image: linear-gradient(to right, rgb(255, 55, 0) , rgb(255, 166, 0));
+    background-image: linear-gradient(to right, rgb(255, 55, 0), rgb(255, 166, 0));
     color: white;
-    border:none;
+    border: none;
     border-radius: 20px;
     padding: 10px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.buscar-ida{
-    background-image: linear-gradient(to right, rgb(35, 0, 139) , rgb(0, 13, 255));
+.buscar-ida {
+    background-image: linear-gradient(to right, rgb(35, 0, 139), rgb(0, 13, 255));
 }
-.buscar-c-volta{
-    background-image: linear-gradient(to right, rgb(255, 55, 0) , rgb(255, 166, 0));
+
+.buscar-c-volta {
+    background-image: linear-gradient(to right, rgb(255, 55, 0), rgb(255, 166, 0));
 }
 
 
@@ -444,7 +451,7 @@ footer {
 
 
 /* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 
     .txt-titulo {
         font-size: 40px;
@@ -458,10 +465,52 @@ footer {
     .dois div {
         width: 25rem;
     }
+
+    /* Tela 3 -  */
+    .kombi div,
+    .kombi div hr {
+        width: 50vw;
+    }
+
+    .kombi-img {
+        height: 25rem;
+
+    }
+
+    .kombi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nos{
+        width: 100vw;
+    }
+
+    /* tela 3 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+    .predios {
+        height: 25vh;
+    }
+
+    /* voos grid (aeroportos) */
+    .coluna-voos {
+        width: 100%;
+    }
+
+    .col .setas {
+        width: 100%;
+    }
+
+
+    .predios {
+        height: 40vh;
+        margin-left: 0rem;
+    }
+    /* fundos nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+
 }
 
 /* RESPONSIVIDADE PARA TELAS MÉDIAS --800PX-- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 
     .txt-titulo {
         font-size: 60px;
@@ -485,5 +534,9 @@ footer {
     .kombi {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    #nos{
+        width: 100vw;
     }
 }
