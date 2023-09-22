@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+ background-image: url("../img/fundo-home.jpg");
+ background-size: 100%;
+}
+
+.filtro {
+    background-color: rgba(0, 0, 0, 30%);
+}
+
+#nav {
+    /* background-color: none; */
+    font-family: Outfit;
+    color: #b2b2b2;
+    font-size: 15px;
+} 
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+

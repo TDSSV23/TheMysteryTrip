@@ -1,39 +1,156 @@
 /*fonte para titulos*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&family=Pacifico&display=swap');
 
 /* ?????? por algum motivo temos uma barra de rolagem na vertical obs. pode ser alguma div /*/
 body {
     overflow-x: hidden;
 }
 
+
+/* fundo das divs */
+/* "página 01" */
+#pacotes {
+    background-image: url(../img/fundo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* "página 02" */
+#nos {
+    background-image: url(../img/mulher.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#entre-contato {
+    background-image: url(../img/londres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*blocos DIV*/
+.fundo {
+    background-color: rgb(250, 250, 250);
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+
+/* cores de texto */
+.w {
+    color: white;
+}
+
+.b {
+    color: black;
+}
+
+
 /*menu NAV*/
 .navbar {
-    position: fixed;
     z-index: 1;
+    /* nav acima de tudo */
 }
 
 .txt-nav {
     text-transform: uppercase;
+    /* letras maiusculas */
     font-size: .9rem;
+    /* tam fonte */
     font-weight: 700;
+    /* espessura fonte */
 }
 
 .nav-item {
     margin-left: 1rem;
+    /* distancia itens */
 }
 
 
 /*blocos DIV*/
 .fundo {
-    filter: brightness(60%);
+    background-color: rgb(250, 250, 250);
+    /* cor de fundo */
     height: 100vh;
-    width: 100vw;
+    /* tamanhos */
+    width: 100%;
+    /* tamanhos */
+    z-index: 0;
+    /* colocando o fundo no fundo */
 }
 
-.imgs {
-    background-color: rgb(133, 133, 133);
-    height: 100vh;
-    width: 100vw;
+/* Atributos gerais */
+
+/* margin do bootstap falhando */
+.m-auto {
+    margin: auto;
+}
+
+/* largura das pages iguais */
+.um div,
+.dois div {
+    width: 50rem;
+}
+
+
+/* ajustes imagem de fundo */
+img {
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/* fonte desenhada para titulos */
+.txt-titulo {
+    font-family: 'Pacifico';
+    font-size: 70px;
+}
+
+/* textos do site */
+.sub-titulo {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.kombi div,
+.kombi div img {
+    width: 50vw;
+}
+
+.kombi {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.kombi-img {
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.kombi-txt {
+    margin: auto;
+}
+
+.kombi-txt hr {
+    border: solid 1px black;
+    width: 30rem;
+    margin: auto;
+}
+
+.predios {
+    height: 80vh;
+    border-top-left-radius: 110px;
+    border-bottom-right-radius: 110px;
+    margin-left: 7rem;
 }
 
 /*titulos de div*/
@@ -43,22 +160,164 @@ h1 {
     font-size: 5rem;
 }
 
+#button-top {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    background-color: blue;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+
+}
+
+/* Seta - botão voltar ao topo*/
+.bi-arrow-up-circle-fill {
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+
+}
+
+/* voos grid */
 
 
+
+/* voos grid (ida e volta) */
+
+.ida {
+    width: 210px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    color: #767676;
+    background-color: white;
+}
+
+.volta {
+    width: 210px;
+    height: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    color: #767676;
+    background-color: white;
+}
+
+.ida p,
+.volta p {
+    margin-top: 8px;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+}
+
+#opcao-voo-2 {
+    display: none;
+}
+
+
+.data-ida {
+    width: 100px;
+    height: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    color: #767676;
+    background-color: white;
+}
+
+.data-volta {
+    width: 100px;
+    height: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    color: #767676;
+    background-color: white;
+}
+/* voos grid (aeroportos) */
+.coluna-voos {
+    width: 100%;
+}
+
+.col .setas{
+    width: 100%;
+}
+
+
+
+.umm {
+    margin-left: auto;
+}
+.doiis {
+    margin-right: auto;
+}
+
+.ida-volta-input {
+    width: 80%;
+    margin: auto;
+}
+
+.circle-flecha {
+    margin: 0;
+}
+
+.setas {
+    margin: 0;
+}
+
+.airport {
+    width: 190px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.circle-flecha {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.flecha {
+    margin-top: 8px;
+    margin-left: -2px;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.ida:focus, .volta:focus{
+    color: orange;
+    border: solid orange 5px;
+}
 
 /* ADICIONAIS ADICIONAIS ADICIONAIS ADICIONAIS */
 
 /*POPUP*/
 .popup {
     z-index: 10;
-
-    width: 100vw;
-    height: 100vh;
+    color: white;
+    width: 70vw;
+    height: 44.49vw;
     padding: 15px;
-    border: solid 1px #4c4d4f;
-    background: #646464;
+    border-radius: 25px;
     display: block;
+    animation-name: popup;
+    animation-duration: 2s;
+    display: none;
 }
+
+#popup {
+    background-image: url(../img/anuncio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 /*BARRA DE NAVEGAÇÃO*/
 ::-webkit-scrollbar-track {
@@ -72,4 +331,100 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
     background: #ffffff;
+}
+
+
+
+
+/* Animações e interatividade */
+#opcao-voo-2 {
+    animation-duration: 2s;
+    animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+    from {
+        margin-left: 10%;
+        opacity: 0%;
+    }
+
+    to {
+        margin-left: 0%;
+        opacity: 100%;
+    }
+}
+
+#opcao-voo-1 {
+    animation-name: slidein1;
+    animation-duration: 2s;
+}
+
+@keyframes slidein1 {
+    from {
+        margin-left: -10%;
+        opacity: 0%;
+    }
+
+    to {
+        margin-left: initial;
+        opacity: 100%;
+    }
+}
+
+@keyframes popup {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+
+}
+
+
+
+/* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
+@media screen and (max-width: 500px) {
+
+    .txt-titulo {
+        font-size: 40px;
+    }
+
+    .sub-titulo {
+        font-size: 14px;
+    }
+
+    .um div,
+    .dois div {
+        width: 25rem;
+    }
+}
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS --800PX-- */
+@media screen and (max-width: 800px) {
+
+    .txt-titulo {
+        font-size: 60px;
+    }
+
+    .sub-titulo {
+        font-size: 18px;
+    }
+
+    .um div,
+    .dois div {
+        width: 30rem;
+    }
+
+    /* Tela 3 -  */
+    .kombi div,
+    .kombi div img {
+        width: 50vw;
+    }
+
+    .kombi {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
