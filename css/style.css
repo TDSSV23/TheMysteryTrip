@@ -32,14 +32,6 @@ body {
     background-position: center;
 }
 
-/*blocos DIV*/
-.fundo {
-    background-color: rgb(250, 250, 250);
-    height: 100vh;
-    width: 100%;
-    z-index: 0;
-}
-
 
 /* cores de texto */
 .w {
@@ -74,7 +66,7 @@ body {
 
 /*blocos DIV*/
 .fundo {
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
     /* cor de fundo */
     height: 100vh;
     /* tamanhos */
@@ -176,8 +168,10 @@ h1 {
     bottom: 2rem;
     right: 2rem;
     cursor: pointer;
+    color: blue;
 
 }
+
 
 /* voos grid */
 
@@ -216,12 +210,31 @@ h1 {
     display: none;
 }
 
+.ida:focus{
+    color: orange;
+    border: solid orange 5px;
+}
+
+.volta:focus{
+    color: blue;
+    border: solid blue 5px;
+}
 
 .data-ida {
     width: 100px;
     height: 50px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
+    text-align: center;
+    color: #767676;
+    background-color: white;
+}
+
+.data-ida2 {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    margin: auto;
     text-align: center;
     color: #767676;
     background-color: white;
@@ -255,7 +268,7 @@ h1 {
 }
 
 .ida-volta-input {
-    width: 80%;
+    width: auto;
     margin: auto;
 }
 
@@ -271,6 +284,7 @@ h1 {
     width: 190px;
     height: 50px;
     border-radius: 50px;
+    padding: 10px;
 }
 
 .circle-flecha {
@@ -285,17 +299,62 @@ h1 {
 }
 
 
+
+.persona{
+    width: 200px;
+    border: solid 1px black ;
+    border-radius: 50px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.persona input{
+
+    width: 100px;
+    height: auto;
+    border: none;
+    padding: 10px;
+}
+
+.buscar-c-volta, .buscar-ida{
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(255, 55, 0) , rgb(255, 166, 0));
+    color: white;
+    border:none;
+    border-radius: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.buscar-ida{
+    background-image: linear-gradient(to right, rgb(35, 0, 139) , rgb(0, 13, 255));
+}
+.buscar-c-volta{
+    background-image: linear-gradient(to right, rgb(255, 55, 0) , rgb(255, 166, 0));
+}
+
+
+
+
+
+
 footer {
     background-color: black;
     color: white;
 }
 
-.ida:focus, .volta:focus{
-    color: orange;
-    border: solid orange 5px;
-}
+
 
 /* ADICIONAIS ADICIONAIS ADICIONAIS ADICIONAIS */
+
+
+/* animações */
+
+
+
 
 /*POPUP*/
 .popup {

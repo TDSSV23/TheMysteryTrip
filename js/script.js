@@ -13,7 +13,7 @@ function fechar() {
 
 function limpar() {
     document.getElementById('opcao-voo-2').style.display = 'none';
-    // document.getElementById('opcao-voo-1').style.display = 'none';
+    document.getElementById('opcao-voo-1').style.display = 'none';
     
 }
 //função do idas e voltas
