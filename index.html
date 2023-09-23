@@ -103,7 +103,7 @@
 
         </div>
     </div>
-<!-- tela 02 - predios -->
+    <!-- tela 02 - predios -->
     <div class="fundo d-flex" id="#">
         <div class="container text-center my-auto">
             <div class="row">
@@ -123,48 +123,49 @@
 
                     <br>
                     <!-- primeira opção -->
-                    <div class="row ida-volta-input" id="opcao-voo-1">
+                    <form class="row ida-volta-input" id="opcao-voo-1">
 
                         <div class="col">De onde você está saindo?
-                            <input class="airport" placeholder="Buscar por aeroportos">
+                            <input class="airport" placeholder="Buscar por aeroportos" id="saida">
                         </div>
 
                         <div class="col">
                             <br>
                             <div class="circle-flecha border border-2 border-warning m-auto"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange"
-                                class="bi bi-arrow-left-right flecha" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707  4H14.5a.5.5 0 0 1 .5.5z" />
-                            </svg>
-                        </div>
+                                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="orange"
+                                    class="bi bi-arrow-left-right flecha" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707  4H14.5a.5.5 0 0 1 .5.5z" />
+                                </svg>
+                            </div>
                         </div>
 
                         <div class="col">Para onde você vai?
-                            <input class="airport" placeholder="Buscar por aeroportos" type="text">
+                            <input class="airport" placeholder="Buscar por aeroportos" type="text" id="chegada">
                         </div>
                         <div class="row mt-3">
-                            <input class="data-ida umm d-inline-flex" type="date">
-                            <input class="  data-volta doiis" type="date">
+                            <input class="data-ida umm d-inline-flex" type="date" id="data">
+                            <input class="  data-volta doiis" type="date" id="data2">
                         </div>
 
                         <div class="col m-0 mt-3 ">
                             <p class="fs-6 my-1">Passageiros</p>
                             <span class="persona">
                                 <i class="bi bi-people"></i>
-                                <input class="m-auto" placeholder="1" type="number" min="1" max="10">
+                                <input class="m-auto" placeholder="1" type="number" min="1" max="10" id="pessoas">
                             </span>
                         </div>
 
                         <div class="mt-4 text-center">
-                            <input type="submit" name="" id="" class="buscar-c-volta" value="Buscar Voos">
+                            <input type="button" name="" id="" class="buscar-c-volta" value="Buscar Voos" onclick="enviar()">
                         </div>
-                    </div>
+                        <span id="ook" class="mt-3"></span>
+                    </form>
                     <!-- Botão 02 -->
-                    <div class="row ida-volta-input" id="opcao-voo-2">
+                    <form class="row ida-volta-input" id="opcao-voo-2">
 
                         <div class="col">De onde você está saindo?
-                            <input class="airport" placeholder="Buscar por aeroportos">
+                            <input class="airport" placeholder="Buscar por aeroportos" id="saida">
                         </div>
 
                         <div class="col">
@@ -179,31 +180,32 @@
                         </div>
 
                         <div class="col">Para onde você vai?
-                            <input class="airport" placeholder="Buscar por aeroportos" type="text">
+                            <input class="airport" placeholder="Buscar por aeroportos" type="text" id="chegada">
                         </div>
                         <div class="row mt-3">
-                            <input class="persona m-auto d-inline-flex" type="date">
+                            <input class="persona m-auto d-inline-flex" type="date" id="data1">
                         </div>
 
                         <div class="col m-0 mt-3 ">
                             <p class="fs-6 my-1">Passageiros</p>
                             <span class="persona">
                                 <i class="bi bi-people"></i>
-                                <input class="m-auto" placeholder="1" type="number" min="1" max="10">
+                                <input class="m-auto" placeholder="1" type="number" min="1" max="10" id="pessoas">
                             </span>
                         </div>
 
                         <div class="mt-4 text-center">
-                            <input type="submit" name="" id="" class="buscar-ida" value="Buscar Voos">
+                            <input type="button" name="" id="" class="buscar-ida" value="Buscar Voos" onclick="enviar2()">
                         </div>
-                    </div>
+                        <span id="ook" class="mt-3"></span>
+                    </form>
 
 
-                    </div>
                 </div>
             </div>
+        </div>
     </div>
-<!-- tela 03 -->
+    <!-- tela 03 -->
     <div class="fundo um d-flex" id="entre-contato">
         <div class="m-auto">
             <hr class="border border-2 opacity-100">
@@ -253,7 +255,8 @@
                 <p>LinkedIn</p>
             </a>
 
-            <a href="https://www.linkedin.com/in/the-mystery-trip-a27937292/" class="img row text-center me-auto" target="_blank">
+            <a href="https://www.linkedin.com/in/the-mystery-trip-a27937292/" class="img row text-center me-auto"
+                target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-instagram" viewBox="0 0 16 16">
                     <path
@@ -266,8 +269,32 @@
 
     <!-- TESTES - popup para banner -->
     <!-- <div id="popup" class="popup position-fixed top-50 start-50 translate-middle">
-    <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
+        <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
     </div> -->
+
+    <!-- mostrar dados -->
+    <div id="mostrar" class="mostrar position-fixed top-50 start-50 translate-middle">
+        
+        <button type="button" class="btn-close" aria-label="Close" onclick="fechar()"></button>
+        <div class="position-absolute mt-3">
+            <br>
+            <span><b>De onde:</b></span>
+            <span id="s-saida" class="text-center"></span><br>
+            <span><b>Para onde:</b></span>
+            <span id="s-chegada" class="text-center"></span><br>
+
+            <span><b>Data de ida:</b></span>
+            <span id="s-data" class="text-center"></span><br>
+            <span><b>Data de volta:</b></span>
+            <span id="s-data2" class="text-center"></span><br>
+
+            <span><b>Passageiros:</b></span>
+            <span id="s-pessoas" class="text-center"></span><br><br>
+            
+            <input type="button" name="" id="ok" class="buscar-c-volta" value="OK" onclick="fechar(); ok()">
+            
+        </div>
+    </div>
 </body>
 
 </html>

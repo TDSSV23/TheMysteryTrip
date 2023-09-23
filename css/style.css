@@ -383,6 +383,16 @@ footer {
     background-repeat: no-repeat;
 }
 
+/* resultado  */
+.mostrar{
+    width: 50vw;
+    height: 80vh;
+    background-color: aliceblue;
+    border-radius: 25px;
+    margin-left: 0;
+    padding: 1rem;
+    display: none;
+}
 
 
 /*BARRA DE NAVEGAÇÃO*/

@@ -1,188 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | The Mistery Trip</title>
-    <!-- CSS -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/avião.png">
-
-    <!-- JS -->
-    <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
+    <title>--Formulário Contato--</title>
+    <meta charset="utf-8" />
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <!-- logo -->
-            <a class="navbar-brand" href="#home">
-                <img src="./img/avião.png" width="50" height="50">
-            </a>
-            <!-- botão responsividade -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+        <h1>teste</h1>
 
-                    <li class="nav-item">
-                        <a class="nav-link txt-nav" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link txt-nav" href="#projeto">Nosso Projeto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link txt-nav" href="#nos">Nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link txt-nav" href="#agenda">Agendamento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link txt-nav" href="#contato">Contate-nos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <input type="text" id="nomeid" placeholder="" required="required" name="nome" />
 
-    <div class="position-relative">
-        <img src="./img/fundo1.jpg" alt="" class="fundo" id="home">
-        <div class="position-absolute top-50 start-50 translate-middle ">
-            <hr class="border border-2 opacity-100">
-            <p class="home-title txt-titulo">Desvende o Mundo</p>
-            <hr class="border border-2 opacity-100">
-            <br>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quaerat deserunt
-                quos necessitatibus ipsam explicabo incidunt itaque repellendus provident exercitationem odio dolores
-                libero pariatur animi facere nihil earum, quibusdam rem?</p>
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
 
-        </div>
-    </div>
-
-
-    <div class="fundo" id="projeto">
-    </div>
-
-    <div class="position-relative">
-        <img src="./img/pautapiu2-1170x650 1.png" alt="" class="fundo">
-        <div class="position-absolute top-50 start-50 translate-middle txt-titulo">
-            <hr class="border border-2 opacity-100">
-            <p class="">Desvende o Mundo</p>
-            <hr class="border border-2 opacity-100">
-        </div>
-
-    </div>
-
-
-    <div class="imgs" id="nos">
-        <div>
-            <h1>teste</h1>
-        </div>
-    </div>
-    <div class="imgs" id="hoteis">
-
-    </div>
-
-
-    <a href="#" id="button-top">
-        <p class="arrow position-absolute top-50 start-50 translate-middle"></p>
-    </a>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <footer id="contato">
-
-    </footer>
+    <span id="re"></span>
 </body>
 
-
 <style>
-    /*fonte para titulos*/
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Pacifico&display=swap');
 
-    body {
-        overflow-x: hidden;
-        color: white;
-    }
-
-    .img {
-        object-fit: fill;
-    }
-
-    .navbar {
-        position: fixed;
-        z-index: 1;
-    }
-
-    .txt-nav {
-        text-transform: uppercase;
-        font-size: .9rem;
-        font-weight: 700;
-    }
-
-    .nav-item {
-        margin-left: 1rem;
-    }
-
-    .fundo {
-        filter: brightness(50%);
-        height: 100vh;
-        width: 100vw;
-        background-size: 100%;
-        z-index: 0;
-    }
-
-    .txt-titulo {
-        font-family: 'Pacifico';
-        font-size: 80px;
-        color: white;
-    }
-
-    p {
-        font-size: 24;
-    }
-
-
-    h1 {
-        font-family: 'pacifico';
-        text-align: center;
-        font-size: 5rem;
-    }
-
-    #button-top {
-        width: 4rem;
-        height: 4rem;
-        border-radius: 50px;
-        background-color: blue;
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-    }
-
-    /* Seta - botão voltar ao topo*/
-    .arrow {
-        border: solid rgb(255, 255, 255);
-        border-width: 0 5px 5px 0;
-        border-radius: 4px;
-        display: inline-block;
-        padding: 8px;
-
-    }
 </style>
+
+<script>
+
+</script>
 
 </html>
