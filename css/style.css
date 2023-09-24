@@ -78,6 +78,7 @@ a {
     /* tamanhos */
     z-index: 0;
     /* colocando o fundo no fundo */
+
 }
 
 /* Atributos gerais */
@@ -258,6 +259,9 @@ h1 {
 .coluna-voos {
     width: 100%;
 }
+
+
+
 
 .col .setas {
     width: 100%;
@@ -458,7 +462,84 @@ footer {
 
 }
 
+@keyframes fundo {
+    from {
+        opacity: 0%;
+    }
 
+    to {
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS --900PX-- */
+@media screen and (max-width: 900px) {
+
+    .txt-titulo {
+        font-size: 60px;
+    }
+
+    .sub-titulo {
+        font-size: 18px;
+    }
+
+    .um div,
+    .dois div {
+        width: 30rem;
+    }
+
+    /* Tela 3 -  */
+    .kombi div,
+    .kombi div img {
+        width: 50vw;
+    }
+
+    .kombi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nos{
+        width: 100vw;
+    }
+
+    .predios{
+        width: 80vw;
+        height: 50vh;
+        margin: auto;
+    }
+}
+
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS --800PX-- */
+@media screen and (max-width: 1200px) {
+
+    .predios {
+        height: 50vh;
+        width: 80vw;
+        margin-left: 0rem;
+    }
+
+    .coluna-voos div{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .ida-volta-input div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    
+}
 
 /* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
 @media screen and (max-width: 600px) {
@@ -506,47 +587,24 @@ footer {
         width: 100%;
     }
 
-    .col .setas {
-        width: 100%;
+    .coluna-voos div{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+
+    .coluna-voos div button{
+        width: 50%;
+        
     }
 
 
     .predios {
-        height: 40vh;
+        height: 20vh;
         margin-left: 0rem;
     }
     /* fundos nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
 
-}
-
-/* RESPONSIVIDADE PARA TELAS MÉDIAS --800PX-- */
-@media screen and (max-width: 900px) {
-
-    .txt-titulo {
-        font-size: 60px;
-    }
-
-    .sub-titulo {
-        font-size: 18px;
-    }
-
-    .um div,
-    .dois div {
-        width: 30rem;
-    }
-
-    /* Tela 3 -  */
-    .kombi div,
-    .kombi div img {
-        width: 50vw;
-    }
-
-    .kombi {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #nos{
-        width: 100vw;
-    }
 }
