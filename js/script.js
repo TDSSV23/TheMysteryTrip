@@ -41,25 +41,12 @@ function enviar() {
 }
 
 function enviar2() {
-    document.getElementById('mostrar').style.display = 'flex';
-    document.getElementById('s-saida').innerHTML = document.getElementById("saida").value;
-    document.getElementById('s-chegada').innerText = "*somente ida";
-
-    document.getElementById('s-data').innerHTML = document.getElementById("data").value;
-
-    document.getElementById('s-pessoas').innerHTML = document.getElementById("pessoas").value;
-
+   document.getElementById('s-chegada').innerText = "*somente ida";
 }
 
 function ok(){
     document.getElementById('ook').innerHTML = "Sua viagem está em processamento... Retornaremos em breve!";
 }
-
-
-function pegarDataAtual(){
-    data = new Date();
-    document.getElementById('data').value = data.getDay()+'/'+data.getMonth()+'/'+data.getFullYear();
- }
 
 
 

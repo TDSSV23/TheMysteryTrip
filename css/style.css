@@ -532,22 +532,20 @@ footer {
         
     }
 
-    .ida-volta-input div{
-        display: flex;
-        flex-direction: column;
+    .circle-flecha, .bi-arrow-left-right, .flecha{
+        margin: auto;
     }
-
     
     
 }
 
 /* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
 @media screen and (max-width: 600px) {
-
+    
     .txt-titulo {
         font-size: 40px;
     }
-
+    
     .sub-titulo {
         font-size: 14px;
     }
@@ -556,37 +554,37 @@ footer {
     .dois div {
         width: 25rem;
     }
-
+    
     /* Tela 3 -  */
     .kombi div,
     .kombi div hr {
         width: 50vw;
     }
-
+    
     .kombi-img {
         height: 25rem;
-
+        
     }
-
+    
     .kombi {
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     #nos{
         width: 100vw;
     }
-
+    
     /* tela 3 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
     .predios {
         height: 25vh;
     }
-
+    
     /* voos grid (aeroportos) */
     .coluna-voos {
         width: 100%;
     }
-
+    
     .coluna-voos div{
         margin-top: 1rem;
         display: flex;
@@ -594,17 +592,36 @@ footer {
         flex-wrap: nowrap;
         
     }
-
+    
     .coluna-voos div button{
         width: 50%;
         
     }
-
-
+    
+    
     .predios {
         height: 20vh;
         margin-left: 0rem;
     }
     /* fundos nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */
+    
+    .ida-volta-input{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    /*POPUP*/
+.popup {
+    z-index: 10;
+    width: 100vw;
+    height: 80vw;
 
+}
+
+#popup {
+    background-image: url(../img/anuncio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 }
