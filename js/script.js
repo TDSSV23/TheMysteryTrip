@@ -57,17 +57,16 @@ function ok() {
 }
 
 
-function pegarDataAtual() {
-    document.getElementById('data').value = data.getDay() + '/' + data.getMonth() + '/' + data.getFullYear();
-
-}
 
 function verificarData() {
     const dataAtual = new Date();
-    let dataHoje = dataAtual.getFullYear() + "-" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate()
-    let dataInput1 = document.getElementById("data").value
-    if (dataHoje == dataInput1) {
-        alert("Data inválida")
+    let dataHoje = dataAtual.getFullYear() + "-0" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate();
+    let dataInput1 = document.getElementById("data").value;
+
+    if (dataHoje.getTime() === dataInput1.getTime()) {
+      alert("Datas Invalidas")
+    } else {
+      
     }
 }
 
