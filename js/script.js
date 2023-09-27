@@ -1,10 +1,9 @@
 setTimeout(abrir, 3000);
 setTimeout(limpar);
-// let opcao = 1
+
 
 //função do POPUP
 function abrir() {
-
     document.getElementById('popup').style.display = 'block';
 }
 function fechar() {
@@ -35,7 +34,7 @@ function enviar() {
 
     document.getElementById('s-data').innerHTML = document.getElementById("data").value;
     document.getElementById('s-data2').innerHTML = document.getElementById("data2").value;
- 
+
     document.getElementById('s-pessoas').innerHTML = document.getElementById("pessoas").value;
 
 }
@@ -48,14 +47,30 @@ function enviar2() {
     document.getElementById('s-data2').innerText = "*somente ida";
 
     document.getElementById('s-data').innerHTML = document.getElementById("data3").value;
- 
+
     document.getElementById('s-pessoas').innerHTML = document.getElementById("pessoas2").value;
 
 }
 
-function ok(){
+function ok() {
     document.getElementById('ook').innerHTML = "Sua viagem está em processamento... Retornaremos em breve!";
 }
+
+
+function pegarDataAtual() {
+    document.getElementById('data').value = data.getDay() + '/' + data.getMonth() + '/' + data.getFullYear();
+
+}
+
+function verificarData() {
+    const dataAtual = new Date();
+    let dataHoje = dataAtual.getFullYear() + "-" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate()
+    let dataInput1 = document.getElementById("data").value
+    if (dataHoje == dataInput1) {
+        alert("Data inválida")
+    }
+}
+
 
 
 
