@@ -63,10 +63,10 @@ function verificarData() {
     let dataHoje = dataAtual.getFullYear() + "-0" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate();
     let dataInput1 = document.getElementById("data").value;
 
-    if (dataHoje.getTime() === dataInput1.getTime()) {
+    if (dataHoje === dataInput1) {
       alert("Datas Invalidas")
-    } else {
-      
+    }else{
+        alert("Datas correta")
     }
 }
 
