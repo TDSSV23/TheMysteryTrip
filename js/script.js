@@ -41,7 +41,16 @@ function enviar() {
 }
 
 function enviar2() {
-   document.getElementById('s-chegada').innerText = "*somente ida";
+    document.getElementById('mostrar').style.display = 'flex';
+    document.getElementById('s-saida').innerHTML = document.getElementById("saida2").value;
+    document.getElementById('s-chegada').innerHTML = document.getElementById("chegada2").value;
+
+    document.getElementById('s-data2').innerText = "*somente ida";
+
+    document.getElementById('s-data').innerHTML = document.getElementById("data3").value;
+ 
+    document.getElementById('s-pessoas').innerHTML = document.getElementById("pessoas2").value;
+
 }
 
 function ok(){
