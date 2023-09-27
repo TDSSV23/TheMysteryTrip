@@ -516,6 +516,14 @@ footer {
         height: 50vh;
         margin: auto;
     }
+
+    footer div{
+        flex-wrap: wrap;
+    }
+
+    footer div a p{
+        display: none;
+    }
 }
 
 
