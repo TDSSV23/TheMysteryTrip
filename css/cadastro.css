@@ -11,16 +11,25 @@ body {
     height: 100%
 }
 
+
+/* Caixa de informações */
+
 .caixa-info {
     width: 900px;
     height: 500px;
     background-color: #e4e4e4;
 }
 
+
+/* imagem */
+
 .col img {
     width: 150px;
     height: 150px;
 }
+
+
+/* itens/inputs */
 
 .col-item-first {
     display: flex;
@@ -36,6 +45,9 @@ body {
     height: 30px;
     padding: 12px;
 }
+
+
+/* botão */
 
 .col-item-btn {
     display: flex;
@@ -63,7 +75,7 @@ body {
 		background-position: 0% 50%;
 	}
 }
-
+ 
 .btn-text {
     color: #fff;
     font-size: 20px;
