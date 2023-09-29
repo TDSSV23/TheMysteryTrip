@@ -65,16 +65,16 @@ function verificarData(opcao) {
     let dataVolta = document.getElementById("data2").value;
     let dataIda2 = document.getElementById("data3").value;
 
-    if (dataIda >= dataVolta || dataIda2 >= dataHoje) {
-        alert("Datas Invalidas")
-    } else {
-        ok()
-        if(opcao == "primeira"){
-            enviar()
-        } else{
-            enviar2()
-        }
-    }
+    // if ( || dataIda2 >= dataHoje ) {
+    //     alert("Datas Invalidas")
+    // } else {
+    //     ok()
+    //     if(opcao == "primeira" && dataIda <= dataVolta){
+    //         enviar()
+    //     } if(){
+    //         enviar2()
+    //     }
+    // }
 }
 
 
