@@ -77,7 +77,7 @@ function verificarData(opcao) {
             if (dataIda == dataVolta) {
                 alert("Datas Invalidas1")
             }
-        }
+        } 
 
     } else {
 
@@ -97,5 +97,6 @@ new dgCidadesEstados({
     cidade: document.getElementById('cidade'),
     estado: document.getElementById('exampleDataList')
   })
+
 
 
