@@ -65,18 +65,37 @@ function verificarData(opcao) {
     let dataVolta = document.getElementById("data2").value;
     let dataIda2 = document.getElementById("data3").value;
 
-    // if ( || dataIda2 >= dataHoje ) {
-    //     alert("Datas Invalidas")
-    // } else {
-    //     ok()
-    //     if(opcao == "primeira" && dataIda <= dataVolta){
-    //         enviar()
-    //     } if(){
-    //         enviar2()
-    //     }
-    // }
+    if (opcao == 'primeira') {
+
+        if (dataIda && dataVolta != null) {
+            if ((dataIda || dataVolta) < dataHoje) {
+                alert("Datas Invalidas1")
+            } else {
+                ok()
+                enviar()
+            }
+            if (dataIda == dataVolta) {
+                alert("Datas Invalidas1")
+            }
+        }
+
+    } else {
+
+        if (dataIda2 != null) {
+            if (dataIda2 < dataHoje) {
+                alert("Datas Invalidas2")
+            } else {
+                ok()
+                enviar2()
+            }
+        }
+
+    }
 }
 
-
+new dgCidadesEstados({
+    cidade: document.getElementById('cidade'),
+    estado: document.getElementById('exampleDataList')
+  })
 
 
