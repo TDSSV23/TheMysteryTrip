@@ -65,7 +65,7 @@ function verificarData(opcao) {
     let dataVolta = document.getElementById("data2").value;
     let dataIda2 = document.getElementById("data2").value;
 
-    if (dataIda === dataVolta || dataIda <= dataVolta || dataHoje == dataIda2) {
+    if (dataIda >= dataVolta || dataHoje >= dataIda2) {
         alert("Datas Invalidas")
     } else {
         ok()
