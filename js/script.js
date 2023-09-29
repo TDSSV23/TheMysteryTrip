@@ -63,9 +63,9 @@ function verificarData(opcao) {
     let dataHoje = dataAtual.getFullYear() + "-0" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate();
     let dataIda = document.getElementById("data").value;
     let dataVolta = document.getElementById("data2").value;
-    let dataIda2 = document.getElementById("data2").value;
+    let dataIda2 = document.getElementById("data3").value;
 
-    if (dataIda >= dataVolta || dataHoje >= dataIda2) {
+    if (dataIda >= dataVolta || dataIda2 >= dataHoje) {
         alert("Datas Invalidas")
     } else {
         ok()
