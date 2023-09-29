@@ -58,15 +58,22 @@ function ok() {
 
 
 
-function verificarData() {
+function verificarData(opcao) {
     const dataAtual = new Date();
     let dataHoje = dataAtual.getFullYear() + "-0" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate();
-    let dataInput1 = document.getElementById("data").value;
+    let dataIda = document.getElementById("data").value;
+    let dataVolta = document.getElementById("data2").value;
+    let dataIda2 = document.getElementById("data2").value;
 
-    if (dataHoje === dataInput1) {
-      alert("Datas Invalidas")
-    }else{
-        alert("Datas correta")
+    if (dataIda === dataVolta || dataIda <= dataVolta || dataHoje == dataIda2) {
+        alert("Datas Invalidas")
+    } else {
+        ok()
+        if(opcao == "primeira"){
+            enviar()
+        } else{
+            enviar2()
+        }
     }
 }
 
