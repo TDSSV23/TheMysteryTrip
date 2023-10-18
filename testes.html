@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- primeira opção (vai ser aberto quando o 1º botão for clicado) -->
+    <form class="row ida-volta-input" id="opcao-voo-1">
+        <!-- coluna com duas linhas -->
+        <div class="col responsividade-linha">
+            <span class=""> De onde você está saindo?</span>
+
+            <input class="airport" placeholder="Buscar por aeroportos" id="saida">
+
+        </div>
+        <!-- setas no centro da div -->
+        <div class="col m-auto">
+            <br>
+            <div class="circle-flecha border border-2 border-warning m-auto "><svg xmlns="http://www.w3.org/2000/svg"
+                    width="30" height="30" fill="orange" class="bi bi-arrow-left-right flecha" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707  4H14.5a.5.5 0 0 1 .5.5z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="col responsividade-linha"><span>Para onde você vai?</span>
+            <input class="airport" placeholder="Buscar por aeroportos" type="text" id="chegada">
+        </div>
+        <div class="row mt-3">
+            <input class="data-ida umm d-inline-flex" type="date" id="data" required>
+            <input class="  data-volta doiis" type="date" id="data2" required>
+        </div>
+
+        <div class="col m-0 mt-3 ">
+            <div class="m-auto">
+                <p class="fs-6 me-0">Passageiros</p>
+                <span class="persona m-auto">
+                    <i class="bi bi-people"></i>
+                    <input class="m-auto" placeholder="1" type="number" min="1" max="10" id="pessoas">
+                </span>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <button type="button" name="" id="" class="buscar-c-volta m-auto" value="Buscar Voos"
+                onclick="verificarData('primeira')">Buscar Voos</button>
+        </div>
+        <span id="ook" class="mt-3"></span>
+    </form>
+    <!-- Botão 02 -->
+    <form class="row ida-volta-input" id="opcao-voo-2">
+
+
+        <div class="col">Para onde você vai?
+            <input class="airport" placeholder="Buscar por aeroportos" type="text" id="chegada2">
+        </div>
+        <div class="row mt-3">
+            <input class="persona m-auto d-inline-flex" type="date" id="data3">
+        </div>
+
+        <div class="col m-0 mt-3 ">
+            <p class="fs-6 my-1">Passageiros</p>
+            <span class="persona m-auto">
+                <i class="bi bi-people"></i>
+                <input class="m-auto" placeholder="1" type="number" min="1" max="10" id="pessoas2">
+            </span>
+        </div>
+
+        <div class="mt-4 text-center">
+            <button type="button" name="" id="" class="buscar-c-volta m-auto" value="Buscar Voos"
+                onclick="verificarData(segunda)">Buscar Voos</button>
+        </div>
+        <span id="ook" class="mt-3"></span>
+    </form>
+
+    <!-- mostrar dados -->
+    <!-- Essa tela vai aparecer quando o formulário for respondido -->
+    <br><br><br><br><br>
+    <hr>
+    <hr>
+    <div class="position-absolute mt-3">
+        <br>
+        <span><b>De onde:</b></span>
+        <span id="s-saida" class="text-center"></span><br>
+        <span><b>Para onde:</b></span>
+        <span id="s-chegada" class="text-center"></span><br>
+
+        <span><b>Data de ida:</b></span>
+        <span id="s-data" class="text-center"></span><br>
+        <span><b>Data de volta:</b></span>
+        <span id="s-data2" class="text-center"></span><br>
+
+        <span><b>Passageiros:</b></span>
+        <span id="s-pessoas" class="text-center"></span><br><br>
+
+        <button type="button" name="" id="ok" class="buscar-c-volta" value="OK" onclick="fechar(); ok()">OK</button>
+
+    </div>
+
+
+</body>
+
+<script>
+    function enviar() {
+        document.getElementById('s-saida').innerHTML = document.getElementById("saida").value;
+        document.getElementById('s-chegada').innerHTML = document.getElementById("chegada").value;
+
+        document.getElementById('s-data').innerHTML = document.getElementById("data").value;
+        document.getElementById('s-data2').innerHTML = document.getElementById("data2").value;
+
+        document.getElementById('s-pessoas').innerHTML = document.getElementById("pessoas").value;
+
+    }
+
+    function enviar2() {
+        document.getElementById('s-saida').innerHTML = document.getElementById("saida2").value;
+        document.getElementById('s-chegada').innerHTML = document.getElementById("chegada2").value;
+
+        document.getElementById('s-data2').innerText = "*somente ida";
+
+        document.getElementById('s-data').innerHTML = document.getElementById("data3").value;
+
+        document.getElementById('s-pessoas').innerHTML = document.getElementById("pessoas2").value;
+
+    }
+
+    function ok() {
+        document.getElementById('ook').innerHTML = "Sua viagem está em processamento... Retornaremos em breve!";
+    }
+
+
+    function verificarData(opcao) {
+        const dataAtual = new Date();
+        let dataHoje = dataAtual.getFullYear() + "-0" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate();
+        let dataIda = document.getElementById("data").value;
+        let dataVolta = document.getElementById("data2").value;
+        let dataIda2 = document.getElementById("data3").value;
+
+        if (opcao == 'primeira') {
+
+            if (dataIda && dataVolta != null) {
+                if ((dataIda || dataVolta) < dataHoje) {
+                    alert("Datas Invalidas1")
+                } else {
+                    ok()
+                    enviar()
+                }
+                if (dataIda == dataVolta) {
+                    alert("Datas Invalidas1")
+                }
+            }
+
+        } else {
+
+            if (dataIda2 != null) {
+                if (dataIda2 < dataHoje) {
+                    alert("Datas Invalidas2")
+                } else {
+                    ok()
+                    enviar2()
+                }
+            }
+
+        }
+    }
+
+</script>
+
+</html>
