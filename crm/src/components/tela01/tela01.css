@@ -1,0 +1,50 @@
+
+/* "página 01" */
+#pacotes {
+    background-image: url(../../assets/fundo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* cores de texto */
+.w {
+    color: white;
+}
+
+.b {
+    color: black;
+}
+
+/*blocos DIV*/
+.fundo {
+    background-color: rgb(255, 255, 255);
+    /* cor de fundo */
+    height: 100vh;
+    /* tamanhos */
+    width: 100vw;
+    /* tamanhos */
+    z-index: 0;
+    /* colocando o fundo no fundo */
+
+}
+
+/* Atributos gerais */
+
+/* margin do bootstap falhando */
+.m-auto {
+    margin: auto;
+}
+
+/* largura das pages iguais */
+.um div,
+.dois div {
+    width: 50rem;
+}
+
+
+/* ajustes imagem de fundo */
+img {
+    object-fit: cover;
+    vertical-align: middle;
+}

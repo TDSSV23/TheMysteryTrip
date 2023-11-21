@@ -19,7 +19,7 @@ a {
 
 /* "página 01" */
 #pacotes {
-    background-image: url(../img/fundo1.jpg);
+    /* background-image: url(../img/fundo1.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,14 +27,14 @@ a {
 
 /* "página 02" */
 #nos {
-    background-image: url(../img/mulher.jpg);
+    /* background-image: url(../img/mulher.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 #entre-contato {
-    background-image: url(../img/londres.jpg);
+    /* background-image: url(../img/londres.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -383,7 +383,7 @@ h1 {
 }
 
 #popup {
-    background-image: url(../img/anuncio.png);
+    /* background-image: url(../img/anuncio.png); */
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -629,7 +629,7 @@ h1 {
 }
 
 #popup {
-    background-image: url(../img/anuncio.png);
+    /* background-image: url(../img/anuncio.png); */
     background-size: cover;
     background-repeat: no-repeat;
 }

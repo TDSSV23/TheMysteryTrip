@@ -1,6 +1,57 @@
 setTimeout(abrir, 3000);
 setTimeout(limpar);
 
+//função do idas e voltas
+function trocar() {
+    document.getElementById('opcao-voo-1').style.display = 'flex';
+    document.getElementById('opcao-voo-2').style.display = 'none';
+}
+
+function trocar_dnv() {
+    document.getElementById('opcao-voo-1').style.display = 'none';
+    document.getElementById('opcao-voo-2').style.display = 'flex';
+}
+
+function verificarData(opcao) {
+    const dataAtual = new Date();
+    let dataHoje = dataAtual.getFullYear() + "-0" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate();
+    let dataIda = document.getElementById("data").value;
+    let dataVolta = document.getElementById("data2").value;
+    let dataIda2 = document.getElementById("data3").value;
+
+    if (opcao == 'primeira') {
+
+        if (dataIda && dataVolta != null) {
+            if ((dataIda || dataVolta) < dataHoje) {
+                alert("Datas Invalidas1")
+            } else {
+                ok()
+                // enviar()
+            }
+            if (dataIda == dataVolta) {
+                alert("Datas Invalidas1")
+            }
+        }
+
+    } else {
+
+        if (dataIda2 != null) {
+            if (dataIda2 < dataHoje) {
+                alert("Datas Invalidas2")
+            } else {
+                ok()
+                // enviar2()
+            }
+        }
+
+    }
+}
+
+
+function ok() {
+    document.getElementById('ook').innerHTML = "Sua viagem está em processamento... Retornaremos em breve!";
+}
+
 
 //função do POPUP
 function abrir() {
@@ -15,16 +66,6 @@ function limpar() {
     document.getElementById('opcao-voo-2').style.display = 'none';
     document.getElementById('opcao-voo-1').style.display = 'none';
 
-}
-//função do idas e voltas
-function trocar() {
-    document.getElementById('opcao-voo-1').style.display = 'flex';
-    document.getElementById('opcao-voo-2').style.display = 'none';
-}
-
-function trocar_dnv() {
-    document.getElementById('opcao-voo-1').style.display = 'none';
-    document.getElementById('opcao-voo-2').style.display = 'flex';
 }
 
 function enviar() {
@@ -51,52 +92,4 @@ function enviar2() {
     document.getElementById('s-pessoas').innerHTML = document.getElementById("pessoas2").value;
 
 }
-
-function ok() {
-    document.getElementById('ook').innerHTML = "Sua viagem está em processamento... Retornaremos em breve!";
-}
-
-
-
-function verificarData(opcao) {
-    const dataAtual = new Date();
-    let dataHoje = dataAtual.getFullYear() + "-0" + (dataAtual.getMonth() + 1) + "-" + dataAtual.getDate();
-    let dataIda = document.getElementById("data").value;
-    let dataVolta = document.getElementById("data2").value;
-    let dataIda2 = document.getElementById("data3").value;
-
-    if (opcao == 'primeira') {
-
-        if (dataIda && dataVolta != null) {
-            if ((dataIda || dataVolta) < dataHoje) {
-                alert("Datas Invalidas1")
-            } else {
-                ok()
-                enviar()
-            }
-            if (dataIda == dataVolta) {
-                alert("Datas Invalidas1")
-            }
-        } 
-
-    } else {
-
-        if (dataIda2 != null) {
-            if (dataIda2 < dataHoje) {
-                alert("Datas Invalidas2")
-            } else {
-                ok()
-                enviar2()
-            }
-        }
-
-    }
-}
-
-new dgCidadesEstados({
-    cidade: document.getElementById('cidade'),
-    estado: document.getElementById('exampleDataList')
-  })
-
-
 

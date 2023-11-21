@@ -1,0 +1,73 @@
+/*fonte para titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&family=Pacifico&display=swap');
+
+/* ?????? por algum motivo temos uma barra de rolagem na vertical obs. pode ser alguma div /*/
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.pacifico, footer{
+    font-family: pacifico;
+}
+
+
+/* "página 01" */
+#pacotes {
+    /* background-image: url(../img/fundo1.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* "página 02" */
+#nos {
+    /* background-image: url(../img/mulher.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#entre-contato {
+    /* background-image: url(../img/londres.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* cores de texto */
+.w {
+    color: white;
+}
+
+.b {
+    color: black;
+}
+
+
+/*menu NAV*/
+.navbar {
+    z-index: 1;
+    /* nav acima de tudo */
+}
+
+.txt-nav {
+    text-transform: uppercase;
+    /* letras maiusculas */
+    font-size: .9rem;
+    /* tam fonte */
+    font-weight: 700;
+    /* espessura fonte */
+}
+
+.nav-item {
+    margin-left: 1rem;
+    /* distancia itens */
+}

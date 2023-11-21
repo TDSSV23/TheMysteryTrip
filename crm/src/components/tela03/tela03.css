@@ -1,0 +1,140 @@
+
+/* "página 02" */
+#nos {
+    background-image: url(../../assets/mulher.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* cores de texto */
+.w {
+    color: white;
+}
+
+.b {
+    color: black;
+}
+
+/*blocos DIV*/
+.fundo {
+    background-color: rgb(255, 255, 255);
+    /* cor de fundo */
+    height: 100vh;
+    /* tamanhos */
+    width: 100vw;
+    /* tamanhos */
+    z-index: 0;
+    /* colocando o fundo no fundo */
+
+}
+
+/* Atributos gerais */
+
+/* margin do bootstap falhando */
+.m-auto {
+    margin: auto;
+}
+
+/* largura das pages iguais */
+.um div,
+.dois div {
+    width: 50rem;
+}
+
+
+/* ajustes imagem de fundo */
+img {
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+
+.kombi div,
+.kombi div img {
+    width: 50vw;
+}
+
+.kombi {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.kombi-img {
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.kombi-txt {
+    margin: auto;
+}
+
+.kombi-txt hr {
+    border: solid 1px black;
+    width: 30rem;
+    margin: auto;
+}
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS --900PX-- */
+@media screen and (max-width: 900px) {
+
+    .txt-titulo {
+        font-size: 60px;
+    }
+
+    .sub-titulo {
+        font-size: 18px;
+    }
+
+    .um div,
+    .dois div {
+        width: 30rem;
+    }
+
+    /* Tela 3 -  */
+    .kombi div,
+    .kombi div img {
+        width: 50vw;
+    }
+
+    .kombi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nos{
+        width: 100vw;
+    }
+
+}
+
+
+
+
+/* RESPONSIVIDADE PARA TELAS PEQUENAS --500PX-- */
+@media screen and (max-width: 600px) {
+    
+
+    
+    /* Tela 3 -  */
+    .kombi div,
+    .kombi div hr {
+        width: 50vw;
+    }
+    
+    .kombi-img {
+        height: 25rem;
+        
+    }
+    
+    .kombi {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #nos{
+        width: 100vw;
+    }
+
+
+}
