@@ -1,0 +1,19 @@
+/*POPUP*/
+.popup {
+    z-index: 10;
+    color: white;
+    width: 70vw;
+    height: 44.49vw;
+    padding: 15px;
+    border-radius: 25px;
+    display: block;
+    animation-name: popup;
+    animation-duration: 2s;
+    display: none;
+}
+
+#popup {
+    background-image: url(../../assets/Anúncio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
